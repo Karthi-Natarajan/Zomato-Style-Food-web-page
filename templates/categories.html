@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Categories - ZoMaTo</title>
+  <link rel="icon" href="{{ url_for('static', filename='cooking.png') }}" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body id="categories-page">
+
+  <video autoplay muted loop class="bg-video">
+    <source src="{{ url_for('static', filename='vid2.mp4') }}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="video-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='zo.jpg') }}" alt="logo" width="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="https://play.google.com/store/apps/details?id=com.zomato.delivery&hl=en_IN&gl=US">Features</a></li>
+          <li class="nav-item"><a class="nav-link active" href="{{ url_for('categories') }}">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('cart') }}">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://shoppinggreedy.com/wp-content/uploads/2025/04/Zomato-first-time-offer-code.jpg"
+          class="d-block w-100" alt="Template1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/e5/7b/7e/e57b7eb76aab26e3a3c89230d2f07cfa.jpg"
+          class="d-block w-100" alt="Template2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://pbs.twimg.com/media/ERWrpeNUcAAY_LU?format=jpg&name=large"
+          class="d-block w-100" alt="Template3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Category Buttons -->
+  <div class="container text-center my-5">
+    <h2 class="mb-4">Choose Your Category</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <button onclick="loadContent('veg')" class="btn btn-success">VEG</button>
+      </div>
+      <div class="col-md-4 mt-3 mt-md-0">
+        <button onclick="loadContent('nonveg')" class="btn btn-danger">NON-VEG</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AJAX Loaded Dish Content -->
+  <div class="container" id="category-content"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='categories.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+/* Apply styles only to the veg page */
+body#veg-page {
+  background: linear-gradient(to right, #f3ffe6, #d9f2d9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+}
+
+/* Section title */
+#veg-page h2 {
+  font-weight: bold;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+/* Card design */
+#veg-page .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#veg-page .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image */
+#veg-page .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Card title & price */
+#veg-page .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+}
+
+#veg-page .card-text {
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* Add to cart button */
+#veg-page .btn-success {
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#veg-page .btn-success:hover {
+  background-color: #218838;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  #veg-page .card-img-top {
+    height: 180px;
+  }
+}

@@ -1,0 +1,100 @@
+<div class="container mt-4" id="non-veg-section">
+  <h2 class="text-center mb-4">Non-Veg Dishes</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg"
+          class="card-img-top" alt="Chicken Biryani">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Biryani</h5>
+          <p class="card-text">₹220</p>
+          <button class="btn btn-success" onclick="addToCart(
+            this.closest('.card').querySelector('.card-title').innerText,
+            parseInt(this.closest('.card').querySelector('.card-text').innerText.replace('₹', '')),
+            this.closest('.card').querySelector('img').src
+          )">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://www.shemins.com/wp-content/uploads/2017/05/Shemins-Butter-Chicken-LR.jpg"
+          class="card-img-top" alt="Butter Chicken">
+        <div class="card-body">
+          <h5 class="card-title">Butter Chicken</h5>
+          <p class="card-text">₹180</p>
+          <button class="btn btn-success" onclick="addToCart(
+            this.closest('.card').querySelector('.card-title').innerText,
+            parseInt(this.closest('.card').querySelector('.card-text').innerText.replace('₹', '')),
+            this.closest('.card').querySelector('img').src
+          )">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://i.ytimg.com/vi/-KbBMYKbmGY/hq720.jpg" class="card-img-top" alt="Mutton Curry">
+        <div class="card-body">
+          <h5 class="card-title">Mutton Curry</h5>
+          <p class="card-text">₹200</p>
+          <button class="btn btn-success" onclick="addToCart(
+            this.closest('.card').querySelector('.card-title').innerText,
+            parseInt(this.closest('.card').querySelector('.card-text').innerText.replace('₹', '')),
+            this.closest('.card').querySelector('img').src
+          )">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://www.whiskaffair.com/wp-content/uploads/2021/10/Andhra-Chicken-Curry-2-3-500x500.jpg"
+          class="card-img-top" alt="Chicken Curry">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Curry</h5>
+          <p class="card-text">₹180</p>
+          <button class="btn btn-success" onclick="addToCart(
+            this.closest('.card').querySelector('.card-title').innerText,
+            parseInt(this.closest('.card').querySelector('.card-text').innerText.replace('₹', '')),
+            this.closest('.card').querySelector('img').src
+          )">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://www.kitchensanctuary.com/wp-content/uploads/2025/02/Egg-Curry-Square-FS-500x500.jpg"
+          class="card-img-top" alt="Egg Curry">
+        <div class="card-body">
+          <h5 class="card-title">Egg Curry</h5>
+          <p class="card-text">₹160</p>
+          <button class="btn btn-success" onclick="addToCart(
+            this.closest('.card').querySelector('.card-title').innerText,
+            parseInt(this.closest('.card').querySelector('.card-text').innerText.replace('₹', '')),
+            this.closest('.card').querySelector('img').src
+          )">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq37_FBSEHMo3-8oM3-PFoQ8Jjb7rYKQ5LZQ&s"
+          class="card-img-top" alt="Fish Fry">
+        <div class="card-body">
+          <h5 class="card-title">Fish Fry</h5>
+          <p class="card-text">₹200</p>
+          <button class="btn btn-success" onclick="addToCart(
+            this.closest('.card').querySelector('.card-title').innerText,
+            parseInt(this.closest('.card').querySelector('.card-text').innerText.replace('₹', '')),
+            this.closest('.card').querySelector('img').src
+          )">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

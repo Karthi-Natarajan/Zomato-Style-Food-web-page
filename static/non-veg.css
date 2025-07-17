@@ -1,0 +1,66 @@
+/* Non-Veg Page Styling */
+body#non-vegpage {
+  background: linear-gradient(to right, #fff0f0, #ffdcdc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+}
+
+/* Section title */
+#non-vegpage h2 {
+  font-weight: bold;
+  color: #8b0000;
+  text-shadow: 1px 1px 2px #f7bbbb;
+}
+
+/* Card design */
+#non-vegpage .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#non-vegpage .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image */
+#non-vegpage .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Card title & price */
+#non-vegpage .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5a0000;
+}
+
+#non-vegpage .card-text {
+  color: #c0392b;
+  font-weight: 500;
+}
+
+/* Add to cart button */
+#non-vegpage .btn-success {
+  width: 100%;
+  font-weight: bold;
+  background-color: #c0392b;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#non-vegpage .btn-success:hover {
+  background-color: #922b21;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  #non-vegpage .card-img-top {
+    height: 180px;
+  }
+}
