@@ -43,7 +43,6 @@ Pygments==2.18.0
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 pytz==2025.2
-pywin32==308
 pyzmq==26.2.0
 redis==6.2.0
 regex==2024.9.11
