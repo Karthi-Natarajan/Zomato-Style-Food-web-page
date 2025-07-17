@@ -1,3 +1,7 @@
+![GitHub stars](https://img.shields.io/github/stars/Karthi-Natarajan/Zomato-Style-Food-web-page?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Karthi-Natarajan/Zomato-Style-Food-web-page?style=social)
+![GitHub license](https://img.shields.io/github/license/Karthi-Natarajan/Zomato-Style-Food-web-page)
+
 # 🍽️ InstaFood – Zomato-Style Food Ordering Website
 
 A full-stack web application inspired by Zomato, where users can browse food items (Veg, Non-Veg, Both), add them to cart, and place orders. The project features user authentication (Signup/Login), category-wise item display, cart functionality using localStorage, and order management via MySQL.
